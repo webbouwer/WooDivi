@@ -1,0 +1,318 @@
+
+/*
+ Theme Name:     WooDivi
+ Author:         Oddsized Webbouwer
+ Author URI:     https://www.webdesigndenhaag.net
+ Template:       Divi
+ Version:        0.1
+*/
+.products.columns-6 li.product
+{
+	margin: 0 !important;
+	width: 16.66% !important;
+	float: left;
+}
+
+.products.columns-6 li.landscape.product
+{
+	width: 33.33% !important;
+	float: left;
+}
+
+
+/* Categroy subcategory grid test 2
+
+.woocommerce ul.products li.product-category
+{
+	position:relative;
+	margin: 0px!important; 
+	padding: 0px!important; 
+	width: 25%!important;
+	height:20vw;
+	line-height:0em;
+	background-color:rgba(0,0,225, 0.3);
+}
+
+.woocommerce ul.products li.product-category a
+{
+	background-color:red;
+	line-height:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+
+	display: flex;
+  	justify-content: center;
+	vertical-align: middle;
+	
+}
+
+.woocommerce ul.products li.product-category a h2
+{
+	position:absolute;
+}
+.woocommerce ul.products li.product-category a img
+{
+	margin: 0px !important;
+	overflow: auto; 
+	
+}
+
+*/
+
+
+
+
+
+
+/* 
+Woo category column display (incl. store category pages)
+Divi code module Woo shortcode  [product_categories parent="22" columns="3" orderby="menu_order"] 
+*/
+
+
+/* test 01 - full width 4 column cover image with text slide down overlay
+body.et_full_width_page #main-content > .container  {
+	width: 100%;
+	max-width: 2400px;
+	margin: auto;
+	position: relative;
+}
+
+.woocommerce ul.products
+{
+	line-height:0.7em !important;
+}
+.woocommerce ul.products li.product-category,
+.woocommerce-page ul.products li.product-category:nth-child(n)
+{
+	margin: 0px!important; 
+	padding: 0px!important; 
+	width: 25%!important;
+	line-height:0em;
+
+	background-color:rgba(0,0,225, 0.3);
+}
+
+.woocommerce ul.products li.product-category a 
+{
+	position:relative;
+	display:block;
+	width:100%;
+	
+	padding: 0px!important; 
+	max-height:20vw;
+
+	display: inline-block;
+  	margin: 0px !important;
+  	border: 0px solid black;
+  	overflow: hidden; 
+}
+
+@media (max-width: 1024px) {
+	.woocommerce ul.products li.product-category,
+	.woocommerce-page ul.products li.product-category:nth-child(n)
+	{
+		margin: 0px!important; 
+		padding: 0px!important; 
+		width: 33.33%!important;
+		line-height:0em;
+	}
+	.woocommerce ul.products li.product-category a 
+	{
+		max-height:19vw; 
+	}
+}
+@media (max-width: 767px) {
+	.woocommerce ul.products li.product-category,
+	.woocommerce-page ul.products li.product-category:nth-child(n)
+	{	
+		width: 50%!important;
+		max-height:30vw;
+	}
+	.woocommerce ul.products li.product-category a 
+	{
+		max-height:30vw; 
+	}
+}
+@media (max-width: 479px) {
+	.woocommerce ul.products li.product-category,
+	.woocommerce-page ul.products li.product-category:nth-child(n)
+	{	
+		width: 100%!important;
+		max-height:60vw;
+	}
+	.woocommerce ul.products li.product-category a 
+	{
+		max-height:60vw; 
+	}
+}
+
+
+
+
+
+.woocommerce ul.products li.product-category a img
+{
+	display: block;
+	transform: scale(1);
+	transition: transform 0.6s ease-in-out;
+	min-width:460px;
+	min-height:100%;
+}
+.woocommerce ul.products li.product-category a:hover img {
+	transform: scale(1.3);
+	transform-origin: 50% 50%;
+}
+.woocommerce ul.products li.product-category a h2
+{
+	position:absolute;
+	display:block;
+	top:0px;
+	left:0px;
+	width:100%;
+
+	text-align:center;
+	color: transparent;
+  	font-size: 1.4em;
+  	text-transform: uppercase;
+	text-shadow: 2px 2px 5px transparent;
+
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+}
+.woocommerce ul.products li.product-category a:hover h2
+{
+	color: white;
+	text-shadow: 1px 1px 5px #888888;
+	top:70%;
+}
+.woocommerce ul.products li.product-category a h2 mark
+{
+	display:none;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* category product grid 
+.woocommerce ul.products.columns-4 li.product, 
+.woocommerce-page ul.products.columns-4 li.product {
+
+	margin: 0 1% 2.992em 0 !important;
+	width: 19% !important;
+	padding:0px !important;
+
+	text-align:center !important;
+}
+
+.woocommerce ul.products.columns-4 li.landscape.product, 
+.woocommerce-page ul.products.columns-4 li.landscape.product {
+	margin: 0 1% 2.992em 0 !important;
+	width: 29% !important;
+	
+}
+a.woocommerce-loop-product__link
+{
+	text-align:center !important;
+}
+
+a.woocommerce-loop-product__link span.et_shop_image
+{
+	display:inline-block !important;
+	max-height:20vw !important;
+	overflow: hidden !important; 
+}
+a.woocommerce-loop-product__link span.et_shop_image img
+{
+	width:auto !important;
+	
+	max-height:20vw !important;
+}
+
+@media (max-width: 767px) {
+	woocommerce ul.products.columns-4 li.product, 
+	.woocommerce-page ul.products.columns-4 li.product {
+	
+		margin: 0 2% 2.992em 0 !important;
+		width: 48% !important;
+	}
+	
+	.woocommerce ul.products.columns-4 li.landscape.product, 
+	.woocommerce-page ul.products.columns-4 li.landscape.product {
+		margin: 0 2% 2.992em 0 !important;
+		width: 98% !important;
+		
+	}
+	a.woocommerce-loop-product__link span.et_shop_image
+	{
+		max-height:60vw !important;
+	}
+	a.woocommerce-loop-product__link span.et_shop_image img
+	{
+		max-height:60vw !important;
+	}
+}
+
+*/
+
+
+/* Woo product gallery flexslider prev next */
+ul.flex-direction-nav {
+    position: absolute;
+    top: 30%;
+    z-index: 99999;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+	pointer-events: none;
+}
+
+li.flex-nav-prev {float: left;}
+li.flex-nav-next {float: right;}
+a.flex-next {visibility:hidden;}
+a.flex-prev {visibility:hidden;}
+
+a.flex-next::after {
+	visibility:visible;
+	content: '\f054';
+  	font-family: 'FontAwesome';
+	margin-right: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+a.flex-prev::before {
+    visibility:visible;
+    content: '\f053';
+  	font-family: 'FontAwesome';
+	margin-left: -10px;
+	font-size: 20px; 
+	font-weight: bold;
+}
+ul.flex-direction-nav li
+{
+	list-style-type: none;
+}
+ul.flex-direction-nav li a {
+	color: #ccc;
+	pointer-events: auto;
+}
+
+ul.flex-direction-nav li a:hover { 
+	text-decoration: none;
+}

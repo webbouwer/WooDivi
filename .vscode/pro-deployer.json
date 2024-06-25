@@ -1,0 +1,39 @@
+{
+	"enableStatusBarItem": true,
+	"enableQuickPick": true,
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"checkGitignore": true,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*",
+		".gitignore" 
+	],
+	"targets": [
+		{
+			"name": "My FTP",
+			"type": "ftp",
+			"host": "webdesigndenhaag.net",
+			"port": 21,
+			"user": "webdesx",
+			"password": "w3btsuURDYZ",
+			"dir": "/public_html/lab/wordpress/wp-shop/wp-content/themes/woodivi",
+			"transferDataType": "binary"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "webdesigndenhaag.net",
+			"port": 22,
+			"user": "webdesx",
+			"password": "w3btsuURDYZ",
+			"dir": "/public_html/lab/wordpress/wp-shop/wp-content/themes/woodivi",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
