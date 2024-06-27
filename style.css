@@ -20,7 +20,14 @@
 }
 
 
-/* Categroy subcategory grid test 2
+
+
+
+
+/* 
+Woo category column display (incl. store category pages)
+Divi code module Woo shortcode  [product_categories parent="22" columns="3" orderby="menu_order"] 
+*/
 
 .woocommerce ul.products li.product-category
 {
@@ -47,105 +54,11 @@
 	
 }
 
-.woocommerce ul.products li.product-category a h2
-{
-	position:absolute;
-}
-.woocommerce ul.products li.product-category a img
-{
-	margin: 0px !important;
-	overflow: auto; 
-	
-}
-
-*/
-
-
-
-
-
-
-/* 
-Woo category column display (incl. store category pages)
-Divi code module Woo shortcode  [product_categories parent="22" columns="3" orderby="menu_order"] 
-*/
-
-
-/* test 01 - full width 4 column cover image with text slide down overlay
-body.et_full_width_page #main-content > .container  {
-	width: 100%;
-	max-width: 2400px;
-	margin: auto;
-	position: relative;
-}
-
-.woocommerce ul.products
-{
-	line-height:0.7em !important;
-}
-.woocommerce ul.products li.product-category,
-.woocommerce-page ul.products li.product-category:nth-child(n)
-{
-	margin: 0px!important; 
-	padding: 0px!important; 
-	width: 25%!important;
-	line-height:0em;
-
-	background-color:rgba(0,0,225, 0.3);
-}
-
-.woocommerce ul.products li.product-category a 
-{
-	position:relative;
-	display:block;
-	width:100%;
-	
-	padding: 0px!important; 
-	max-height:20vw;
-
-	display: inline-block;
-  	margin: 0px !important;
-  	border: 0px solid black;
-  	overflow: hidden; 
-}
-
 @media (max-width: 1024px) {
-	.woocommerce ul.products li.product-category,
-	.woocommerce-page ul.products li.product-category:nth-child(n)
-	{
-		margin: 0px!important; 
-		padding: 0px!important; 
-		width: 33.33%!important;
-		line-height:0em;
-	}
-	.woocommerce ul.products li.product-category a 
-	{
-		max-height:19vw; 
-	}
 }
 @media (max-width: 767px) {
-	.woocommerce ul.products li.product-category,
-	.woocommerce-page ul.products li.product-category:nth-child(n)
-	{	
-		width: 50%!important;
-		max-height:30vw;
-	}
-	.woocommerce ul.products li.product-category a 
-	{
-		max-height:30vw; 
-	}
 }
 @media (max-width: 479px) {
-	.woocommerce ul.products li.product-category,
-	.woocommerce-page ul.products li.product-category:nth-child(n)
-	{	
-		width: 100%!important;
-		max-height:60vw;
-	}
-	.woocommerce ul.products li.product-category a 
-	{
-		max-height:60vw; 
-	}
 }
 
 
@@ -195,7 +108,6 @@ body.et_full_width_page #main-content > .container  {
 	display:none;
 }
 
-*/
 
 
 
